@@ -171,6 +171,30 @@ main {
   flex: 1; /* Main content will grow to fill the space, pushing the footer to the bottom */
   padding: 20px;
 }
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
 
 /* Footer Styling */
 footer {
