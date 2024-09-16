@@ -1,0 +1,248 @@
+body {
+  background-color: #ECDFCC;
+  color: #1E201E;
+  font-family: outfit;
+}
+#govlogo{
+  display: inline-flex;
+  width: 90%;
+}
+#govimg{
+  width:120px;
+  height: auto;
+}
+#ayushhead {
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+  color: #ffffff;
+}
+
+#boxtop {
+  background-color: #3C3D37;
+  width: 100;
+  height: auto;
+  padding-bottom: 30px;
+  padding-top: 40px;
+}
+
+#youare {
+  background-color: #697565;
+  padding: 1%;
+  color: #ffffff;
+  border-radius: 10px;
+  display: flex; /*Use flexbox*/
+  justify-content: space-between; /* Text on left, buttons on right */
+  align-items: center; /* Vertically center both text and button group */
+}
+
+.button-group {
+  display: inline-flex;
+}
+
+.btn {
+  background-color: #ffffff;
+  /* border: 1px solid #fefefe; */
+  color: rgb(0, 0, 0);
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:not(:last-child) {
+  border-right: none;
+}
+
+.btn:hover {
+  background-color: #919191;
+}
+
+#regbox {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50px;
+  background-color: #ECDFCC;
+}
+
+#form {
+  padding: 1%;
+  margin-top: 20px;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Navbar Styling */
+  .navbar {
+    background-color: #1E201E;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 30px;
+  }
+  
+  /* Logo */
+  .navbar-logo img {
+    width: 15px;
+    height: auto;
+    margin-top: -25px;
+  }
+  
+  /* Navbar Menu */
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 20px;
+    margin-top: -10px;
+  }
+  
+  .navbar-menu li a {
+    color: rgba(255, 255, 255,0.8);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-menu li a:hover {
+    color: #bbb;
+    text-decoration: underline;
+  }
+  
+  /* Search and Bag Icons */
+  .navbar-search,
+  .navbar-bag {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: -20px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-search:hover,
+  .navbar-bag:hover {
+    color: #bbb;
+  }
+  
+/* Responsive for Mobile */
+@media (max-width: 1100px) {
+  .navbar-menu {
+    display: none; /* Hide the menu for mobile */
+  }
+
+  .navbar-search,
+  .navbar-bag {
+    font-size: 24px;
+
+  }
+}
+html, body {
+  height: 100%; /* Ensure the HTML and body take up the full height of the viewport */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ECDFCC;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Content */
+main {
+  flex: 1; /* Main content will grow to fill the space, pushing the footer to the bottom */
+  padding: 20px;
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 100px;
+  background-color: #1E201E;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+footer .footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* This will wrap the links to the next line if screen size is small */
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+footer .footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+  color: #bbb;
+}
+
+footer hr {
+  border: none;
+  height: 1px;
+  background-color: white;
+  margin: 20px 0;
+}
+
+footer .copyright {
+  font-size: 14px;
+}
+
+footer .visitor-id {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #bbb;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 600px) {
+  footer .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (max-width: 700px){
+  #youare {
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align text and button group */
+    width: 100%; /* Full width for mobile */
+  }
+  .button-group {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    margin-top: 10px;
+    width: 100%; /* Full width for buttons */
+  }
+  .btn {
+    padding: 8px 12px; /* Reduce padding for mobile */
+    width: fit-content; /* Buttons take full width */
+    font-size: 14px; /* Reduce font size */
+    margin-bottom: 5px; /* Add some spacing between buttons */
+  }
+}
