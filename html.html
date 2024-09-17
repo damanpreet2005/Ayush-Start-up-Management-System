@@ -56,236 +56,253 @@
       <div id="formSection">
         <!-- Student Form -->
         <div id="studentForm" class="form-container">
-          <h2>Student Registration Form</h2>
+            <h1><b>Student Registration Form</b></h1>
+            <div id="Main">
+                <div id="photo">
+                    <img src="india-emb.png" id="photo-main">
+                </div>
 
-          <form>
-              <!-- Student Type Dropdown -->
-              <div class="form-group">
-                  <label for="student-type">Student Type:</label>
-                  <select id="student-type" name="student-type">
-                      <option value="undergraduate">Undergraduate</option>
-                      <option value="postgraduate">Postgraduate</option>
-                      <option value="phd">PhD</option>
-                  </select>
-              </div>
-          
-              <!-- Full Name -->
-              <div class="form-group">
-                  <label for="fullname">Full Name:</label>
-                  <input type="text" id="fullname" name="fullname" required>
-              </div>
-          
-              <!-- Father's Name -->
-              <div class="form-group">
-                  <label for="fathers-name">Father's Name:</label>
-                  <input type="text" id="fathers-name" name="fathers-name" required>
-              </div>
-          
-              <!-- Date of Birth -->
-              <div class="form-group">
-                  <label for="dob">Date of Birth:</label>
-                  <input type="date" id="dob" name="dob" required>
-              </div>
-          
-              <!-- Email -->
-              <div class="form-group">
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required>
-              </div>
-          
-              <!-- Mobile Number -->
-              <div class="form-group">
-                  <label for="mobile">Mobile Number:</label>
-                  <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
-              </div>
-          
-              <!-- Gender -->
-              <div class="form-group">
-                  <label>Gender:</label>
-                  <input type="radio" id="male" name="gender" value="male" required> Male
-                  <input type="radio" id="female" name="gender" value="female"> Female
-                  <input type="radio" id="other" name="gender" value="other"> Other
-              </div>
-          
-              <!-- Password -->
-              <div class="form-group">
-                  <label for="password">Password:</label>
-                  <input type="password" id="password" name="password" required>
-              </div>
-          
-              <!-- Confirm Password -->
-              <div class="form-group">
-                  <label for="confirm-password">Confirm Password:</label>
-                  <input type="password" id="confirm-password" name="confirm-password" required>
-              </div>
-          
-              <!-- Address -->
-              <div class="form-group">
-                  <label for="address">Address:</label>
-                  <input type="text" id="address" name="address" required>
-              </div>
-          
-              <!-- State Dropdown -->
-              <div class="form-group">
-                  <label for="state">State:</label>
-                  <select id="state" name="state" required>
-                      <option value="state1">State 1</option>
-                      <option value="state2">State 2</option>
-                      <option value="state3">State 3</option>
-                  </select>
-              </div>
-          
-              <!-- District Dropdown -->
-              <div class="form-group">
-                  <label for="district">District:</label>
-                  <select id="district" name="district" required>
-                      <option value="district1">District 1</option>
-                      <option value="district2">District 2</option>
-                      <option value="district3">District 3</option>
-                  </select>
-              </div>
-          
-              <!-- Pin Code -->
-              <div class="form-group">
-                  <label for="pincode">Pin Code:</label>
-                  <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required>
-              </div>
-          
-              <!-- Upload Image -->
-              <div class="form-group">
-                  <label for="upload">Upload Image:</label>
-                  <input type="file" id="upload" name="upload" accept="image/*" required>
-              </div>
-          
-              <!-- Submit Button -->
-              <button type="submit">Submit</button>
-          </form>
+                <div id="main-form">
+                    <form>
+                        <!-- Student Type Dropdown -->
+                        <div class="form-group">
+                            <label for="student-type"><h4>Student Type:</h4></label>
+                            <select class="form-select" id="student-type" name="student-type">
+                                <option value="undergraduate">Undergraduate</option>
+                                <option value="postgraduate">Postgraduate</option>
+                                <option value="phd">PhD</option>
+                            </select>
+                        </div>
+                    
+                        <!-- Full Name -->
+                        <div class="form-group">
+                            <label for="fullname"><h4>Full Name:</h4></label>
+                            <input class="form-input" type="text" id="fullname" name="fullname" required>
+                        </div>
+                    
+                        <!-- Father's Name -->
+                        <div class="form-group">
+                            <label for="fathers-name"><h4>Father's Name:</h4></label>
+                            <input class="form-input" type="text" id="fathers-name" name="fathers-name" required>
+                        </div>
+                    
+                        <!-- Date of Birth -->
+                        <div class="form-group">
+                            <label for="dob"><h4>Date of Birth:<h4></h4></label>
+                            <input class="form-input" type="date" id="dob" name="dob" required>
+                        </div>
+                    
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email"><h4>Email:</h4></label>
+                            <input class="form-input" type="email" id="email" name="email" required>
+                        </div>
+                    
+                        <!-- Mobile Number -->
+                        <div class="form-group">
+                            <label for="mobile"><h4>Mobile Number:</h4></label>
+                            <input class="form-input" type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                        </div>
+                    
+                        <!-- Gender -->
+                        <div class="form-group">
+                            <label for="district"><h4>Gender:</h4></label>
+                            <select class="form-select" id="gender" name="gender" required>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+                    
+                        <!-- Password -->
+                        <div class="form-group">
+                            <label for="password"><h4>Password:</h4></label>
+                            <input class="form-input" type="password" id="password" name="password" required>
+                        </div>
+                    
+                        <!-- Confirm Password -->
+                        <div class="form-group">
+                            <label for="confirm-password"><h4>Confirm Password:</h4></label>
+                            <input class="form-input" type="password" id="confirm-password" name="confirm-password" required>
+                        </div>
+                    
+                        <!-- Address -->
+                        <div class="form-group">
+                            <label for="address"><h4>Address:</h4></label>
+                            <input class="form-input" type="text" id="address" name="address" required>
+                        </div>
+                    
+                        <!-- State Dropdown -->
+                        <div class="form-group">
+                            <label for="state"><h4>State:</h4></label>
+                            <select class="form-select" id="state" name="state" required>
+                                <option value="state1">State 1</option>
+                                <option value="state2">State 2</option>
+                                <option value="state3">State 3</option>
+                            </select>
+                        </div>
+                        <br>
+                    
+                        <!-- District Dropdown -->
+                        <div class="form-group">
+                            <label for="district"><h4>District:</h4></label>
+                            <select class="form-select" id="district" name="district" required>
+                                <option value="district1">District 1</option>
+                                <option value="district2">District 2</option>
+                                <option value="district3">District 3</option>
+                            </select>
+                        </div>
+                    
+                        <!-- Pin Code -->
+                        <div class="form-group">
+                            <label for="pincode"><h4>Pin Code:</h4></label>
+                            <input class="form-input" type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required>
+                        </div>
+                    
+                        <!-- Upload Image -->
+                        <div class="form-group">
+                            <label for="upload"><h4>Upload Image:</h4></label>
+                            <label for="file-upload" class="custom-file-upload">
+                                Choose File
+                            </label>
+                            <input type="file" id="file-upload" class="apple-file-input">
+                            <span id="file-name" class="file-name">No file chosen</span>
+                        </div>
+                    
+                        <!-- Submit Button -->
+                        <button class="form-button" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    
         <!-- College Form -->
         <div id="collegeForm" class="form-container">
-          <h2>College  Registration Form</h2>
-          <form>
-
-            <!-- Contact Person Name -->
-            <div class="form-group">
-                <label for="contactPerson">Contact Person Full Name:</label>
-                <input type="text" id="contactPerson" name="contactPerson" required>
+            <h1><b>College  Registration Form</b></h1>
+            <div id="Main">
+                <div id="photo">
+                    <img src="india-emb.png" id="photo-main">
+                </div>
+                <div id="main-form">
+                    <form>
+                        <!-- Contact Person Name -->
+                        <div class="form-group">
+                            <label for="contactPerson">Contact Person Full Name:</label>
+                            <input type="text" id="contactPerson" name="contactPerson" required>
+                        </div>
+                    
+                        <!-- Gender -->
+                        <div class="form-group">
+                            <label>Gender:</label>
+                            <input type="radio" id="male" name="gender" value="Male" required>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label>
+                            <input type="radio" id="other" name="gender" value="Other">
+                            <label for="other">Other</label>
+                        </div>
+                    
+                        <!-- College Type Dropdown -->
+                        <div class="form-group">
+                            <label for="collegeType">College Type:</label>
+                            <select id="collegeType" name="collegeType" required>
+                                <option value="">Select College Type</option>
+                                <option value="Ayush">Ayush</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    
+                        <!-- College Name -->
+                        <div class="form-group">
+                            <label for="collegeName">College Name:</label>
+                            <input type="text" id="collegeName" name="collegeName" required>
+                        </div>
+                    
+                        <!-- Date of Affiliation -->
+                        <div class="form-group">
+                            <label for="affiliationDate">Date of Affiliation:</label>
+                            <input type="date" id="affiliationDate" name="affiliationDate" required>
+                        </div>
+                    
+                        <!-- Affiliation Number -->
+                        <div class="form-group">
+                            <label for="affiliationNumber">Affiliation Number:</label>
+                            <input type="text" id="affiliationNumber" name="affiliationNumber" required>
+                        </div>
+                    
+                        <!-- Affiliation University Name -->
+                        <div class="form-group">
+                            <label for="universityName">Affiliation University Name:</label>
+                            <input type="text" id="universityName" name="universityName" required>
+                        </div>
+                    
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    
+                        <!-- Mobile Number -->
+                        <div class="form-group">
+                            <label for="mobile">Mobile Number:</label>
+                            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                        </div>
+                    
+                        <!-- Password -->
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                    
+                        <!-- Confirm Password -->
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password:</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        </div>
+                    
+                        <!-- College Address -->
+                        <div class="form-group">
+                            <label for="address">College Address:</label>
+                            <textarea id="address" name="address" rows="1" required></textarea>
+                        </div>
+                    
+                        <!-- State Dropdown -->
+                        <div class="form-group">
+                            <label for="state">State:</label>
+                            <select class="form-select" id="state" name="state" required>
+                                <option value="">Select State</option>
+                                <option value="State1">State 1</option>
+                                <option value="State2">State 2</option>
+                                <option value="State3">State 3</option>
+                            </select>
+                        </div>
+                    
+                        <!-- District Dropdown -->
+                        <div class="form-group">
+                            <label for="district">District:</label>
+                            <select class="form-select" id="district" name="district" required>
+                                <option value="">Select District</option>
+                                <option value="District1">District 1</option>
+                                <option value="District2">District 2</option>
+                                <option value="District3">District 3</option>
+                            </select>
+                        </div>
+                    
+                        <!-- Pin Code -->
+                        <div class="form-group">
+                            <label for="pincode">Pin Code:</label>
+                            <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required>
+                        </div>
+                    
+                        <!-- Upload Image -->
+                        <div class="form-group">
+                            <label for="uploadImage">Upload Image:</label>
+                            <input type="file" id="uploadImage" name="uploadImage" accept="image/*" required>
+                        </div>
+                    
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
-        
-            <!-- Gender -->
-            <div class="form-group">
-                <label>Gender:</label>
-                <input type="radio" id="male" name="gender" value="Male" required>
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="Female">
-                <label for="female">Female</label>
-                <input type="radio" id="other" name="gender" value="Other">
-                <label for="other">Other</label>
-            </div>
-        
-            <!-- College Type Dropdown -->
-            <div class="form-group">
-                <label for="collegeType">College Type:</label>
-                <select id="collegeType" name="collegeType" required>
-                    <option value="">Select College Type</option>
-                    <option value="Ayush">Ayush</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
-        
-            <!-- College Name -->
-            <div class="form-group">
-                <label for="collegeName">College Name:</label>
-                <input type="text" id="collegeName" name="collegeName" required>
-            </div>
-        
-            <!-- Date of Affiliation -->
-            <div class="form-group">
-                <label for="affiliationDate">Date of Affiliation:</label>
-                <input type="date" id="affiliationDate" name="affiliationDate" required>
-            </div>
-        
-            <!-- Affiliation Number -->
-            <div class="form-group">
-                <label for="affiliationNumber">Affiliation Number:</label>
-                <input type="text" id="affiliationNumber" name="affiliationNumber" required>
-            </div>
-        
-            <!-- Affiliation University Name -->
-            <div class="form-group">
-                <label for="universityName">Affiliation University Name:</label>
-                <input type="text" id="universityName" name="universityName" required>
-            </div>
-        
-            <!-- Email -->
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-        
-            <!-- Mobile Number -->
-            <div class="form-group">
-                <label for="mobile">Mobile Number:</label>
-                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
-            </div>
-        
-            <!-- Password -->
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-        
-            <!-- Confirm Password -->
-            <div class="form-group">
-                <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required>
-            </div>
-        
-            <!-- College Address -->
-            <div class="form-group">
-                <label for="address">College Address:</label>
-                <textarea id="address" name="address" rows="1" required></textarea>
-            </div>
-        
-            <!-- State Dropdown -->
-            <div class="form-group">
-                <label for="state">State:</label>
-                <select id="state" name="state" required>
-                    <option value="">Select State</option>
-                    <option value="State1">State 1</option>
-                    <option value="State2">State 2</option>
-                    <option value="State3">State 3</option>
-                </select>
-            </div>
-        
-            <!-- District Dropdown -->
-            <div class="form-group">
-                <label for="district">District:</label>
-                <select id="district" name="district" required>
-                    <option value="">Select District</option>
-                    <option value="District1">District 1</option>
-                    <option value="District2">District 2</option>
-                    <option value="District3">District 3</option>
-                </select>
-            </div>
-        
-            <!-- Pin Code -->
-            <div class="form-group">
-                <label for="pincode">Pin Code:</label>
-                <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required>
-            </div>
-        
-            <!-- Upload Image -->
-            <div class="form-group">
-                <label for="uploadImage">Upload Image:</label>
-                <input type="file" id="uploadImage" name="uploadImage" accept="image/*" required>
-            </div>
-        
-            <button type="submit">Submit</button>
-        </form>
-
-
         </div>
     
         <!-- Industry Form -->

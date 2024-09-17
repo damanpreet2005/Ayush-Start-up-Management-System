@@ -167,15 +167,25 @@ body {
 }
 
 /* Main Content */
-main {
+#form {
   flex: 1; /* Main content will grow to fill the space, pushing the footer to the bottom */
   padding: 20px;
+  display: inline-flex;
 }
-form {
-  max-width: 600px;
+#Main{
+  display: inline-flex;
+}
+#photo{
+  width: 50rem;
+}
+#photo-main{
+  padding-top: 4rem;
+  padding-left: 4rem;
+  width: 70%;
+}
+#Form {
   margin: 20px auto;
   padding: 20px;
-  border: 1px solid #ccc;
   border-radius: 10px;
 }
 .form-group {
@@ -194,6 +204,106 @@ input, select {
 button {
   padding: 10px 15px;
   cursor: pointer;
+}
+
+
+/* Button styling */
+.form-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #606156; /* Apple’s blue text color */
+  background-color: #fff; /* White background */
+  border: 2px solid #d2d2d7; /* Light grey border */
+  border-radius: 12px; /* Rounded corners */
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.form-button:hover {
+  border-color: #606156; /* Blue border on hover */
+  color: #606156; /* Text remains blue */
+}
+
+.form-button:active {
+  border-color: #606156; /* Darker blue border on active state */
+  color: #606156; /* Text becomes slightly darker */
+}
+
+.button-container {
+  text-align: center;
+}
+/* Input container styling */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Text Input Styling */
+.form-input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #d2d2d7;
+  border-radius: 12px;
+  transition: border-color 0.3s ease;
+  background-color: #fff;
+  width: 300px;
+}
+
+.form-input:focus {
+  border-color: #606156;
+  outline: none;
+}
+
+/* Dropdown (Select) Input Styling */
+.form-select {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #d2d2d7;
+  border-radius: 12px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+  width: 325px;
+}
+
+.form-select:focus {
+  border-color: #606156;
+  outline: none;
+}
+
+/* To make both inputs look uniform */
+input::placeholder {
+  color: #a3a3a8;
+  font-weight: 400;
+}
+/* Custom "Choose File" Button */
+.custom-file-upload {
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #606156;
+  border: 2px solid #d2d2d7;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  border-color: #606156;
+  background-color: #f2f2f7;
+}
+
+/* Hide the default file input */
+.apple-file-input {
+  display: none;
+}
+
+/* File name display */
+.file-name {
+  font-size: 14px;
+  color: #6e6e73;
 }
 
 /* Footer Styling */
