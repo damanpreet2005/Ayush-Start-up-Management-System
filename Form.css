@@ -7,12 +7,14 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('form-back.jpg'); /* Add the background image */
-    background-size: cover; /* Ensure the image covers the entire background */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repeating the image */
-    height: 100vh; /* Ensure the body takes the full viewport height */
-    justify-content: center;  /* Center the container horizontally */
+    background-color: black;
+    background-image: url('vecteezy_minimalist-dark-gradient-wave-background-simple-design-for_7718309.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    justify-content: center;
     align-items: center;
 }
 
@@ -187,6 +189,7 @@ h6{
 input[type="date"]:before {
     content: attr(placeholder);
     color: #888;
+    display: flex;
     margin-right: 5px;
 }
 
