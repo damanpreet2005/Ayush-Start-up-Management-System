@@ -1,7 +1,7 @@
 body {
-  background-color: #ECDFCC;
+  background-color: #137300;
   color: #1E201E;
-  font-family: outfit;
+  font-family: 'Courier New', Courier, monospace;
 }
 #govlogo{
   display: inline-flex;
@@ -15,11 +15,11 @@ body {
   width: 100%;
   text-align: center;
   margin-top: 80px;
-  color: #ffffff;
+  color: #ffffffb8;
 }
 
 #boxtop {
-  background-color: #3C3D37;
+  background-color: #1b1d11;
   width: 100;
   height: auto;
   padding-bottom: 30px;
@@ -27,7 +27,7 @@ body {
 }
 
 #youare {
-  background-color: #697565;
+  background-color: #72929d;
   padding: 1%;
   color: #ffffff;
   border-radius: 10px;
@@ -249,7 +249,7 @@ button {
   border-radius: 12px;
   transition: border-color 0.3s ease;
   background-color: #fff;
-  width: 300px;
+  width: 325px;
 }
 
 .form-input:focus {
